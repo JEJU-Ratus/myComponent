@@ -1,3 +1,4 @@
+// 커스텀 속성값이 data-carousel-button 인 DOM 객체를 전부 선택
 const buttons = document.querySelectorAll("[data-carousel-button]");
 
 buttons.forEach((button) => {
