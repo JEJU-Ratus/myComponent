@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme:{
+        extend:{
+          keyframes:{
+            'fade-in-down': {
+              '0%': {
+                  opacity: '0',
+                  transform: 'translateY(-50px)'
+              },
+              '100%': {
+                  opacity: '1',
+                  transform: 'translateY(0)',
+              },
+            }
+          },
+          animation:{
+          'fade-in-down': 'fade-in-down 300ms ease-in-out',
+          }
+        }
+      }
+    }
+  </script>
+  <title>Modal-full</title>
+</head>
+<body>
+  <nav class="fixed top-0 left-0 z-0 w-full bg-white border-b border-gray-200">
+    <div
+      class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto"
+    >
+      <!-- 메뉴 버튼 -->
+      <button
+        type="button"
+        class="leading-normal transition duration-150 ease-in-out w-[20px]"
+      >
+        <img src="assets/img/menu.png" alt="메뉴 버튼" />
+      </button>
+      <div class="flex items-center justify-between">
+        <h1 class="sr-only">Modal</h1>
+        <img src="" class="w-[160px]" alt="" />
+      </div>
+      <!-- 프로토타입에는 검색 아이콘이나, 내쿠폰함으로 이동하는 아이콘으로 변경되었습니다.-->
+      <div class="flex text-blue-500">
+        123
+      </div>
+    </div>
+  </nav>
+
+  <div class="fixed left-0 top-0 z-[1] h-full w-full overflow-y-auto overflow-x-hidden outline-none animate-fade-in-down">
+    <div class="pointer-events-none relative w-auto min-[0px]:m-0 min-[0px]:h-full min-[0px]:max-w-none">
+      <section class="bg-white">
+        <h2>Modal Body</h2>
+      </section>
+    </div>
+  </div>
+
+
+  
+</body>
+</html>
