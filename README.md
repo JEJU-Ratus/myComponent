@@ -19,3 +19,6 @@
 - dropdown 메뉴 구현.
 - 최상위 드롭다운은 기본값으로 펼쳐놓는다.
 - 다른 드롭다운 메뉴를 클릭하면 기존에 펼쳐져있던 드롭다운 메뉴가 닫힌다.
+
+## select-country.html
+- select dropdown의 도시 목록
