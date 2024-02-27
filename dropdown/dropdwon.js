@@ -1,13 +1,14 @@
-const heading = document.querySelectorAll('.heading'),
+const dropdownTitle = document.querySelectorAll('.heading'),
 dropdownBox = document.querySelectorAll('.dropdownBox'),
 arrowIcons = document.querySelectorAll('.arrow-icon');
 
-const firstQuestionHeight = heading[0].nextElementSibling.getBoundingClientRect().height;
-heading[0].nextElementSibling.classList.add(`max-h-[${firstQuestionHeight + 'px'}]`)
+const firstQuestionHeight = dropdownTitle[0].nextElementSibling.getBoundingClientRect().height;
+dropdownTitle[0].nextElementSibling.classList.add(`max-h-[${firstQuestionHeight + 'px'}]`)
+
 
 let prevTargetHeight = firstQuestionHeight;
 
-heading.forEach(fho =>{
+dropdownTitle.forEach(fho =>{
   fho.addEventListener('click',()=>{
     const targetBox = fho.nextElementSibling;
     const targetArrowIcon = fho.firstElementChild.children[1];
