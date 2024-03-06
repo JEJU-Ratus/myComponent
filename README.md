@@ -22,3 +22,8 @@
 
 ## select-country.html
 - select dropdown의 도시 목록
+
+## dropdown2
+- dropdown 메뉴
+- 모든 드롭다운이 기본으로 닫혀있음.
+- 화살표가 따로 없고, 언더라인이 제목 밑에 있음.
